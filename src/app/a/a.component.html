@@ -1,0 +1,9 @@
+<p>a works!</p>
+
+<Button (click)="getData()"> Get data</Button>
+
+
+@for( user of users; track user.id){
+
+    <p> {{user.id}} : {{user.name}}</p>
+}
