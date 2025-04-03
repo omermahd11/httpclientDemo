@@ -1,1 +1,20 @@
 <p>b works!</p>
+
+<button (click)="getData()">Get Studnts</button>
+<h2> Students List</h2>
+
+@for( student of students; track student.id){
+
+    <p>{{student.id}} : {{student.name}} : {{student.age}}</p>
+}
+
+
+
+
+<br><br>
+
+<input type="text" [(ngModel)]="st.name" placeholder="Enterstudent name" />
+<br><br>
+<input type="number" [(ngModel)]="st.age" placeholder="Enterstudent age" />
+<br><br>
+<Button (click)="addStudent()">Add User</Button>
